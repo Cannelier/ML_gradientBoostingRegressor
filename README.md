@@ -12,12 +12,13 @@ Trains GBRT algorithm on labeled_dataset_axaggpdsc.csv.
 Targets column = 'Benefice net annuel'
 
 function encoding converts categorical values into number:
-	col_str = Array of categorical fields
-	col_str_dicts = Nested dictionnary
-		{'Field1' : {'ValueA': 0, 'ValueB':1, 'ValueC':2...},
-		'Field2': {'ValueA': 0,...},
-		...}
-	Then replace in df dataframe for each field : ValueA => 0, ValueB => 1...
+col_str = Array of categorical fields
+col_str_dicts = Nested dictionnary
+{
+'Field1' : {'ValueA': 0, 'ValueB':1, 'ValueC':2...},
+'Field2': {'ValueA': 0,...},
+...}
+Then replace in df dataframe for each field : ValueA => 0, ValueB => 1...
 
 
 function dataprep converts mainly replaces missing values by average values.
